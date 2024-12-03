@@ -2,6 +2,7 @@
   "name": "world-service",
   "version": "0.0.0",
   "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./build --target bun",
     "dev": "bun run --watch src/index.ts",
     "lint": "biome lint",
     "prepare": "husky"
