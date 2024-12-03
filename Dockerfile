@@ -22,8 +22,8 @@ RUN sed -i '/prepare/d' package.json && \
     bun install --production --frozen-lockfile
 
 ENV NODE_ENV=production
-ENV PORT=3001
+ENV PORT=3002
 
-EXPOSE 3001
+EXPOSE 3002
 
 CMD ["bun", "run", "build/index.js"]
