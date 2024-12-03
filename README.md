@@ -13,3 +13,9 @@ bun run dev
 ```
 
 Open http://localhost:3000/ with your browser to see the result.
+
+# Build the Docker image
+docker build -t world-service .
+
+# Run the container
+docker run -p 3001:3001 world-service
